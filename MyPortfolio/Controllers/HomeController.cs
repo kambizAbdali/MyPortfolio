@@ -6,11 +6,10 @@ namespace MyPortfolio.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+       // private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
+        public HomeController()
+        { 
         }
 
         public IActionResult Index()
@@ -18,7 +17,7 @@ namespace MyPortfolio.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Contact()
         {
             return View();
         }
